@@ -8,7 +8,7 @@
 
 	namespace AppleGame
 	{	
-	
+		// Перечень режимов игры
 		enum GameSettingsBits
 		{
 			None = 0,
@@ -18,6 +18,7 @@
 			Mod_Limited_Apples = 1 << 3      // Ограниченное количество яблок
 		};
 
+		// Перечень всех состояний игры 
 		enum class GameState 
 		{
 			MainMenu,
@@ -28,8 +29,7 @@
 			Pause
 		};
 
-		
-
+		// Структура для экрана рекордов
 		struct HighScore
 		{
 			std::string name;
