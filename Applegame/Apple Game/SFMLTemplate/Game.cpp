@@ -222,16 +222,15 @@ namespace AppleGame
 				}
 			}
 
-
 			// Переход к диалоговому окну выхода
-			else if (Keyboard::isKeyPressed(Keyboard::Escape))
+			if (Keyboard::isKeyPressed(Keyboard::Escape))
 			{
 				game.lastState = game.currentState;
 				game.currentState = GameState::ExitDialog;
 			}
 
 			// Переход к игре
-			else if (Keyboard::isKeyPressed(Keyboard::Space))
+			if (Keyboard::isKeyPressed(Keyboard::Space))
 			{
 				RestartGame(game);
 				game.currentState = GameState::Playing;
