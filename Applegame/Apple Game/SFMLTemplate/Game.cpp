@@ -32,6 +32,7 @@ namespace AppleGame
 		}
 	}
 
+	// Инициализация таблицы рекордов
 	void InitHighScores(Game& game)
 	{
 		const std::string names[20] = {
